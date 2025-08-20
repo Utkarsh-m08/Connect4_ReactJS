@@ -1,0 +1,30 @@
+.game-board {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  border: 5px solid black;
+  background-color: white;
+}
+
+.board-row {
+  display: flex;
+  flex: 1;
+}
+
+.board-cell {
+  width: calc(100% / 7); /* 7 columns */
+  height: calc(100% / 6); /* 6 rows */
+  border: 1px solid black;
+  background-color: #e0e0e0; 
+  transition: background-color 0.3s ease;
+}
+
+.board-cell.player-1 {
+  background-color: red;
+}
+
+.board-cell.player-2 {
+  background-color: yellow;
+}

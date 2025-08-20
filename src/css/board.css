@@ -1,0 +1,55 @@
+.board-wrapper {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.board-wrapper img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0;
+}
+
+.board-white {
+  z-index: 3;
+}
+
+.board-black {
+  top: 3px;
+  z-index: 1;
+}
+
+.grid-layer {
+  position: absolute;
+  gap: -1px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 500px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.grid-row {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+.grid-cell {
+  width: 40%;
+  height: 90%;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.player-1 {
+  background-color: var(--red);
+}
+
+.player-2 {
+  background-color: var(--yellow);
+}

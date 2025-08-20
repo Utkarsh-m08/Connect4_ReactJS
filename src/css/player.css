@@ -1,0 +1,23 @@
+.player-box-white {
+  padding: 5px;
+  position: relative;
+  height: 200px;
+  background-color: white;
+  width: 150px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  border: 4px solid black;
+  border-bottom: 15px solid black;
+  border-radius: 12px;
+
+  /* border */
+}
+
+.player-score {
+  font-size: 3rem;
+}
+
+.player-logo {
+  height: 70px;
+}   
